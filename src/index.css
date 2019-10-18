@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 100px;
+    font-family: Georgia, Times, serif;
+    font-size: 1.5em;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 1rem 1rem;
+    background-color: rgb(43, 204, 86);
+    color: white;
+    font-size: 0.6em;
+}
+
+.page-header {
+    background-color: rgb(43, 204, 86);
+    margin-top: 0;
+    padding: .2rem 1rem;
+}
+
+.page-header h1 {
+    color: white;
+}
+
+button {
+    width: 100%;
+    height: auto;
+    color: white;
+    font: "Georgia", Times, serif;
+    font-size: 1.5rem;
+    background: lightgreen;
+}
+
+ol, ul {
+    padding-left: 30px;
+}
+
+.board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.status {
+    margin-bottom: 10px;
+}
+
+.square {
+    background: lightgreen;
+    border: 1px solid #999;
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 150px;
+    height: 150px;
+    margin-right: 3px;
+    margin-top: 3px;
+    padding: 0;
+    text-align: center;
+    width: 150px;
+}
+
+.square:focus {
+    outline: none;
+}
+
+.kbd-navigation .square:focus {
+    background: #ddd;
+}
+
+.game {
+    padding: 50px 50px 50px 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.game-info {
+    margin-left: 60px;
+}
